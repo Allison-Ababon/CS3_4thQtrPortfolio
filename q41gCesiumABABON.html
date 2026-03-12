@@ -58,7 +58,15 @@ form.addEventListener("submit", function(e){
     const title = document.getElementById("title").value;
     const year = document.getElementById("year").value;
     const genre = document.getElementById("genre").value;
-    const rating = document.querySelector('input[name="rating"]:checked').value;
+    
+    const selectedRating = document.querySelector('input[name="rating"]:checked');
+
+    if (!selectedRating) {
+        alert("Don't forget to pick a star rating!");
+        return; 
+    }
+
+    const rating = selectedRating.value;
 
     const movie = {
         title: title,
@@ -66,6 +74,8 @@ form.addEventListener("submit", function(e){
         genre: genre,
         rating: rating
     };
+
+form.reset(); // This part is optional but keeps the form clean!
 
     let movies = JSON.parse(localStorage.getItem("movies")) || [];
     movies.push(movie);
@@ -97,3 +107,4 @@ displayMovies();
 </script>
 
 </body>
+
