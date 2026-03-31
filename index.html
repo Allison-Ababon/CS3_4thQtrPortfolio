@@ -1,4 +1,211 @@
-<a href="q41gCesiumABABON.html">1st Graded</a>
-<a href="CesiumAbabonSeatwork2.md">2nd seatwork MD file</a>
-<a href="CesiumAbabonSeatwork2.html">2nd seatwork HTML file</a>
-<a href="3rd_graded/index.html">3rd Graded</a>
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">* {cursor: url(https://cur.cursors-4u.net/holidays/hol-4/hol338.cur), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2009/10/14/tiny-skull-crossbones.html" target="_blank" title="Tiny Skull Crossbones"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Tiny Skull Crossbones" style="position:absolute; top: 0px; right: 0px;" /></a>
+<style>
+  body {
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+  }
+
+  .myspace-table {
+    width: 300px;
+    background-color: #fff;
+    border: 2px solid #cc669c;
+    padding: 0;
+  }
+
+  .myspace-header {
+    background-color: #cc669c;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px 10px;
+    text-transform: capitalize;
+  }
+
+  .link-container {
+    padding: 10px;
+  }
+
+  .myspace-link {
+    display: block;
+    color: #c7297d;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 8px;
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 4px;
+  }
+
+  .myspace-link:hover {
+    color: #7b0644;
+    text-decoration: underline;
+    background-color: #f2f2f2;
+  }
+
+  .myspace-footer {
+    font-size: 11px;
+    color: #666;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #cc669c;
+    background-color: #e5e5e5;
+  }
+
+  .blink {
+    animation: blinker 1s linear infinite;
+    color: #000000;
+    font-weight: bold;
+  }
+
+  .cute-bg-character {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 200px;
+    height: auto;
+    z-index: 999;
+    pointer-events: none;
+}
+
+.radio-widget {
+    width: 298px;
+    margin-top: 0px;
+}
+
+.myspace-btn {
+    background: #cc669c !important;
+    border: 1px solid #fff !important;
+    color: #ffffff !important;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    height: 25px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.myspace-btn:hover {
+    background: #9e4373 !important;
+}
+
+.promo-text {
+    font-size: 12px;
+    line-height: 1.2em;
+    text-align: center;
+    color: #333;
+    margin: 5px 0;
+}
+
+.song-meta {
+    font-size: 11px;
+    text-align: center;
+    margin: 10px 0;
+    color: #666;
+}
+
+.radio-widget i, .radio-widget strong {
+    background: -webkit-linear-gradient(#cc669c, #730a42);
+    background-size: 200% auto; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: slidegradient2 2s linear infinite;
+    font-style: italic;
+}
+
+@keyframes slidegradient2 {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+.box-radio-right {
+    padding: 0 10px;
+}
+
+.cd {
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+  @keyframes blinker {
+    50% { opacity: 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="myspace-table">
+  <div class="myspace-header">
+    ALLY WAY'S LINKIES <span class="blink">!!</span>
+  </div>
+  
+  <div class="link-container">
+    <a href="q41gCesiumABABON.html" class="myspace-link">1st Graded</a>
+    <a href="CesiumAbabonSeatwork2.md" class="myspace-link">2nd seatwork MD file</a>
+    <a href="CesiumAbabonSeatwork2.html" class="myspace-link">2nd seatwork HTML file</a>
+    <a href="3rd_graded/index.html" class="myspace-link">3rd Graded</a>
+  </div>
+
+  <div class="myspace-table radio-widget">
+    <div class="myspace-header">
+        Radio Station <span class="blink">!!</span>
+    </div>
+
+    <div class="link-container">
+        <div class="radio-content">
+            <div class="box-radio-left">
+                <img src="vinyl.png" class="cd" alt="vinyl" style="width: 80px; height: auto; display: block; margin: 0 auto 10px auto;">
+            </div>
+
+            <div class="box-radio-right">
+                <p class="promo-text">Go ahead n play this <strong>super duper fire song</strong>!</p>
+
+                <audio id="bg-music" loop>
+                    <source src="Thank You for the Venom.mp3" type="audio/mpeg">
+                </audio>
+          
+                <button id="music-toggle" class="myspace-btn">Play a song</button>
+          
+                <script>
+                    const music = document.getElementById("bg-music");
+                    const toggle = document.getElementById("music-toggle");
+                    let playing = false;
+          
+                    toggle.addEventListener("click", () => {
+                        if (!playing) {
+                            music.play();
+                            toggle.textContent = "Pause song?";
+                            playing = true;
+                        } else {
+                            music.pause();
+                            toggle.textContent = "Play a song";
+                            playing = false;
+                        }
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+    
+    <div class="myspace-footer">
+        Currently Playing: Thank You for the Venom (MCR)
+    </div>
+</div>
+
+</div>
+
+<img src="https://64.media.tumblr.com/a0340afaac52b4e38e81b075182e0656/de0cad145b46ed15-44/s100x200/84675397c58d9195757639214836503dfeb554e3.gifv" class="cute-bg-character">
+
+</body>
+</html>
